@@ -62,7 +62,7 @@ export default function DashboardPage() {
       <Card className="border-0 shadow-none -m-6 -mt-10 bg-gradient-to-br from-primary/10 to-transparent rounded-none">
         <CardHeader className="p-6 pt-10">
           <CardTitle className="text-3xl font-headline">
-            Welcome to the Heat Treating Hub
+            The Future of Metallurgy is Here
           </CardTitle>
           <CardDescription className="text-lg">
             Your AI-powered assistant for metallurgy and heat treatment.
