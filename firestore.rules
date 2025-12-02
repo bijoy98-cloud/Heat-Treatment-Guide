@@ -1,0 +1,140 @@
+/**
+ * Core Philosophy: This ruleset implements a dual security model. It provides
+ * strict user-ownership for private data (user profiles) and a public-read,
+ * owner-write model for community and reference content.
+ *
+ * Data Structure:
+ * - /users/{userId}/profile: Private user data is nested under a path scoped
+ *   to the user's unique ID, ensuring strict data privacy.
+ * - /alloys, /heatTreatmentProcesses, /glossaryTerms: These top-level collections
+ *   store public, read-only reference data.
+ * - /forumPosts: A top-level collection for community content that is publicly
+ *   readable but writable only by the original author.
+ *
+ * Key Security Decisions:
+ * - User Privacy: User profiles are strictly private. A user can only access
+ *   their own profile document, and listing other users' data is disallowed.
+ * - Read-Only Data: Core application data like alloys and processes are read-only
+ *   for all clients to ensure data integrity. They are expected to be managed
+ *   by a trusted server-side process (e.g., Admin SDK).
+ * - Denormalization for Authorization: The `/forumPosts` documents contain a
+ *   denormalized `authorId` field. This is critical for security and performance,
+ *   as it allows for ownership checks on write operations without requiring
+ *   slow and costly `get()` calls to other documents.
+ * - Relational Integrity: On document creation, rules enforce that internal ID
+ *   fields (like `UserProfile.id` or `ForumPost.authorId`) match the user or
+ *   path context, preventing data inconsistencies. These fields are then made
+ *   immutable on update.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // -------------------------------------------------------------------------
+    // Helper Functions
+    // -------------------------------------------------------------------------
+
+    /**
+     * Checks if the user is authenticated.
+     */
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    /**
+     * Checks if the currently authenticated user's UID matches the provided userId.
+     * This is the primary function for enforcing data ownership.
+     */
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    // -------------------------------------------------------------------------
+    // User Data
+    // -------------------------------------------------------------------------
+
+    /**
+     * @description Manages a user's private profile information.
+     * @path /users/{userId}/profile
+     * @allow (create) An authenticated user creating their own profile: auth.uid == 'user_abc', path == '/users/user_abc/profile'.
+     * @deny (get) A user trying to read another user's profile: auth.uid == 'user_123', path == '/users/user_abc/profile'.
+     * @principle Restricts access to a user's own data tree.
+     */
+    match /users/{userId}/profile {
+      allow get: if isOwner(userId);
+      allow list: if false;
+      allow create: if isOwner(userId) && request.resource.data.id == userId;
+      allow update: if isOwner(userId) && resource != null && request.resource.data.id == resource.data.id;
+      allow delete: if isOwner(userId) && resource != null;
+    }
+
+    // -------------------------------------------------------------------------
+    // Public Read-Only Reference Data
+    // -------------------------------------------------------------------------
+
+    /**
+     * @description Provides public, read-only access to alloy information.
+     * @path /alloys/{alloyId}
+     * @allow (get) Any user, authenticated or not, reading an alloy document.
+     * @deny (create) Any client attempting to create a new alloy document.
+     * @principle Provides public read-only access to reference data.
+     */
+    match /alloys/{alloyId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Provides public, read-only access to heat treatment processes.
+     * @path /heatTreatmentProcesses/{processId}
+     * @allow (get) Any user, authenticated or not, reading a process document.
+     * @deny (update) Any client attempting to modify a process document.
+     * @principle Provides public read-only access to reference data.
+     */
+    match /heatTreatmentProcesses/{processId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Provides public, read-only access to glossary terms.
+     * @path /glossaryTerms/{termId}
+     * @allow (list) Any user, authenticated or not, listing all glossary terms.
+     * @deny (delete) Any client attempting to delete a glossary term.
+     * @principle Provides public read-only access to reference data.
+     */
+    match /glossaryTerms/{termId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    // -------------------------------------------------------------------------
+    // Public Community Content
+    // -------------------------------------------------------------------------
+
+    /**
+     * @description Manages community forum posts. Posts are public to read,
+     * but only the original author can create, update, or delete them.
+     * @path /forumPosts/{postId}
+     * @allow (create) An authenticated user creating a post with their own UID as authorId: auth.uid == 'user_abc', request.resource.data.authorId == 'user_abc'.
+     * @deny (update) An authenticated user trying to edit another user's post: auth.uid == 'user_123', resource.data.authorId == 'user_abc'.
+     * @principle Enforces document ownership for writes while allowing public reads.
+     */
+    match /forumPosts/{postId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if isSignedIn() && request.resource.data.authorId == request.auth.uid;
+      allow update: if resource != null && isOwner(resource.data.authorId) && request.resource.data.authorId == resource.data.authorId;
+      allow delete: if resource != null && isOwner(resource.data.authorId);
+    }
+  }
+}
