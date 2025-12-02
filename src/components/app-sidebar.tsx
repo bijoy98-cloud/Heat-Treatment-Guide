@@ -50,15 +50,14 @@ export function AppSidebar() {
           {navigation.map((item) => (
             <SidebarMenuItem key={item.name}>
               <SidebarMenuButton
-                asChild
+                as={Link}
+                href={item.href}
                 isActive={pathname.startsWith(item.href)}
                 tooltip={item.name}
                 className="text-sidebar-foreground/80 hover:text-sidebar-accent-foreground data-[active=true]:text-sidebar-accent-foreground"
               >
-                <Link href={item.href}>
-                  <item.icon />
-                  <span>{item.name}</span>
-                </Link>
+                <item.icon />
+                <span>{item.name}</span>
               </SidebarMenuButton>
             </SidebarMenuItem>
           ))}
@@ -68,7 +67,7 @@ export function AppSidebar() {
         <Separator className="my-2 bg-sidebar-border" />
         <div className="p-4 bg-sidebar-accent/10 rounded-lg text-center space-y-2">
           <h3 className="font-semibold text-sm">Upgrade to Pro</h3>
-          <p className="text-xs text-sidebar-foreground/60">
+          <p className="text-xs text-sidebar-foreground/60 text-justify">
             Unlock advanced features and get unlimited access to our support team.
           </p>
           <Button variant="default" size="sm" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
