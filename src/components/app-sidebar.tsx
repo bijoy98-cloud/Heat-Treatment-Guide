@@ -42,7 +42,7 @@ export function AppSidebar() {
         <div className="flex items-center gap-2">
           <Flame className="h-8 w-8 text-primary" />
           <h2 className="text-xl font-bold font-headline text-primary-foreground group-data-[collapsible=icon]:hidden">
-            Heat Treating
+            Heat Treatment Guide
           </h2>
         </div>
       </SidebarHeader>

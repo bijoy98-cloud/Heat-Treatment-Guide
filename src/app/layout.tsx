@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Heat Treating',
+  title: 'Heat Treatment Guide',
   description: 'AI-Powered solutions and resources for heat treatment.',
 };
 

@@ -42,7 +42,7 @@ const navigation = [
 export function AppHeader() {
   const pathname = usePathname();
   const pageTitle =
-    navigation.find((item) => item.href === pathname)?.name || 'Heat Treating';
+    navigation.find((item) => item.href === pathname)?.name || 'Heat Treatment Guide';
 
   const userAvatar = PlaceHolderImages.find((img) => img.id === 'user-avatar');
 
