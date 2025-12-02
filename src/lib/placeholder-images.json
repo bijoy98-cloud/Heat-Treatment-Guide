@@ -69,14 +69,122 @@
     {
       "id": "community-author-2",
       "description": "Avatar for another community forum user",
-      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0Njc2MTU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0Njc2MTU4fDA&ixlib_rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
     },
     {
       "id": "community-author-3",
       "description": "Avatar for a third community forum user",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ2NzYxNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ2NzYxNTh8MA&ixlib_rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "phase-diagram",
+      "imageUrl": "https://images.unsplash.com/photo-1761168129112-4ddc297dc797?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaGFzZSUyMGRpYWdyYW18ZW58MHx8fHwxNzY0NjkwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "phase diagram",
+      "description": "Thumbnail for OSHA video"
+    },
+    {
+      "id": "heat-treatment-intro",
+      "imageUrl": "https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoZWF0JTIwdHJlYXRtZW50fGVufDB8fHx8MTc2NDY5MDMxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "heat treatment",
+      "description": "Thumbnail for Heat Treatment Intro video"
+    },
+    {
+      "id": "heat-treatment-properties",
+      "imageUrl": "https://images.unsplash.com/photo-1615634698485-3b4fa1b43dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtZXRhbCUyMHByb3BlcnRpZXN8ZW58MHx8fHwxNzY0NjkwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal properties",
+      "description": "Thumbnail for Heat Treatment Properties video"
+    },
+    {
+      "id": "heat-treatment-techniques",
+      "imageUrl": "https://images.unsplash.com/photo-1745448797901-2a4c9d9af1c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWxkaW5nJTIwdGVjaG5pcXVlc3xlbnwwfHx8fDE3NjQ2OTAzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "welding techniques",
+      "description": "Thumbnail for Heat Treatment Techniques video"
+    },
+    {
+      "id": "mastering-heat-treatment",
+      "imageUrl": "https://images.unsplash.com/photo-1572113620176-8a586d8d834c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzbWVsdGluZyUyMG1ldGFsfGVufDB8fHx8MTc2NDY5MDMxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smelting metal",
+      "description": "Thumbnail for Mastering Heat Treatment video"
+    },
+    {
+      "id": "metallurgy-basics",
+      "imageUrl": "https://images.unsplash.com/photo-1705875021755-88ba2c835524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbGx1cmd5JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY0Njg4MTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metallurgy textbook",
+      "description": "Thumbnail for Metallurgy Basics video"
+    },
+    {
+      "id": "annealing-secrets",
+      "imageUrl": "https://images.unsplash.com/photo-1739056238917-d89cd05c48d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnbG93aW5nJTIwbWV0YWx8ZW58MHx8fHwxNzY0NjkwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glowing metal",
+      "description": "Thumbnail for Annealing Secrets video"
+    },
+    {
+      "id": "heat-treatment-ageing",
+      "imageUrl": "https://images.unsplash.com/photo-1759141274832-129d1e05cacf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGFnZWluZ3xlbnwwfHx8fDE3NjQ2OTAzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal ageing",
+      "description": "Thumbnail for Heat Treatment Ageing video"
+    },
+    {
+      "id": "tempering-importance",
+      "imageUrl": "https://images.unsplash.com/photo-1740072161938-008c96e7bbf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0ZW1wZXJpbmclMjBzdGVlbHxlbnwwfHx8fDE3NjQ2OTAzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tempering steel",
+      "description": "Thumbnail for Tempering Importance video"
+    },
+    {
+      "id": "decarburization-vs-carburization",
+      "imageUrl": "https://images.unsplash.com/photo-1667487648590-4bab281f0300?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjYXJib24lMjBzdGVlbHxlbnwwfHx8fDE3NjQ2OTAzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "carbon steel",
+      "description": "Thumbnail for Decarburization vs Carburization video"
+    },
+    {
+      "id": "induction-foundry",
+      "imageUrl": "https://images.unsplash.com/photo-1751783901059-3d1870e69581?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmR1Y3Rpb24lMjBmdXJuYWNlfGVufDB8fHx8MTc2NDY5MDMxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "induction furnace",
+      "description": "Thumbnail for Induction Foundry video"
+    },
+    {
+      "id": "plasma-nitriding-intro",
+      "imageUrl": "https://images.unsplash.com/photo-1759437857324-fca900e82c27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGxhc21hJTIwYXJjfGVufDB8fHx8MTc2NDY5MDMxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "plasma arc",
+      "description": "Thumbnail for Plasma Nitriding Intro video"
+    },
+    {
+      "id": "forging-vs-heat-treatment",
+      "imageUrl": "https://images.unsplash.com/photo-1701743807536-a8c7de05b84b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxibGFja3NtaXRoJTIwaGFtbWVyfGVufDB8fHx8MTc2NDY5MDMxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blacksmith hammer",
+      "description": "Thumbnail for Forging vs Heat Treatment video"
+    },
+    {
+      "id": "die-casting-dies",
+      "imageUrl": "https://images.unsplash.com/photo-1625465104350-6db75b747a1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxkaWUlMjBjYXN0aW5nfGVufDB8fHx8MTc2NDY5MDMxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "die casting",
+      "description": "Thumbnail for Die Casting Dies video"
+    },
+    {
+      "id": "powder-metallurgy",
+      "imageUrl": "https://images.unsplash.com/photo-1704650312022-ed1a76dbed1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbCUyMHBvd2RlcnxlbnwwfHx8fDE3NjQ2OTAzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal powder",
+      "description": "Thumbnail for Powder Metallurgy video"
+    },
+    {
+      "id": "laser-welding",
+      "imageUrl": "https://images.unsplash.com/photo-1735494033794-b82c88743a16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsYXNlciUyMHdlbGRpbmd8ZW58MHx8fHwxNzY0NjkwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "laser welding",
+      "description": "Thumbnail for Laser Welding video"
+    },
+    {
+      "id": "heat-treatment-tips",
+      "imageUrl": "https://images.unsplash.com/photo-1692445630561-fd55d8cb8c97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxnbG93aW5nJTIwc3RlZWx8ZW58MHx8fHwxNzY0NjkwMzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "glowing steel",
+      "description": "Thumbnail for Heat Treatment Tips video"
+    },
+    {
+      "id": "cryogenic-treatment",
+      "imageUrl": "https://images.unsplash.com/photo-1562411403-f583472c8e87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaXF1aWQlMjBuaXRyb2dlbnxlbnwwfHx8fDE3NjQ2OTAzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "liquid nitrogen",
+      "description": "Thumbnail for Cryogenic Treatment video"
     }
   ]
 }
