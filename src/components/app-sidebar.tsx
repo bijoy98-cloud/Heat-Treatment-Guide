@@ -37,7 +37,7 @@ export function AppSidebar() {
   const pathname = usePathname();
 
   return (
-    <Sidebar>
+    <Sidebar className="bg-sidebar text-sidebar-foreground">
       <SidebarHeader>
         <div className="flex items-center gap-2">
           <Flame className="h-8 w-8 text-primary" />
@@ -54,6 +54,7 @@ export function AppSidebar() {
                 <SidebarMenuButton
                   isActive={pathname.startsWith(item.href)}
                   tooltip={item.name}
+                  className="text-sidebar-foreground/80 hover:text-sidebar-accent-foreground data-[active=true]:text-sidebar-accent-foreground"
                 >
                   <item.icon />
                   <span>{item.name}</span>
@@ -64,10 +65,10 @@ export function AppSidebar() {
         </SidebarMenu>
       </SidebarContent>
       <SidebarFooter className="group-data-[collapsible=icon]:hidden">
-        <Separator className="my-2" />
-        <div className="p-4 bg-secondary/50 rounded-lg text-center space-y-2">
+        <Separator className="my-2 bg-sidebar-border" />
+        <div className="p-4 bg-sidebar-accent/10 rounded-lg text-center space-y-2">
           <h3 className="font-semibold text-sm">Upgrade to Pro</h3>
-          <p className="text-xs text-muted-foreground">
+          <p className="text-xs text-sidebar-foreground/60">
             Unlock advanced features and get unlimited access to our support team.
           </p>
           <Button variant="default" size="sm" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
