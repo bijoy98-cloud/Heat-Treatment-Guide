@@ -39,8 +39,8 @@ export function AppSidebar() {
   return (
     <Sidebar className="bg-sidebar text-sidebar-foreground">
       <SidebarHeader>
-        <div className="flex items-center gap-2">
-          <h2 className="text-xl font-bold font-headline text-primary-foreground group-data-[collapsible=icon]:hidden">
+        <div className="flex items-center justify-center gap-2">
+          <h2 className="text-lg font-bold font-headline text-primary-foreground group-data-[collapsible=icon]:hidden">
             Heat Treatment Guide
           </h2>
         </div>
