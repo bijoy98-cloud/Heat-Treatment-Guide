@@ -9,11 +9,14 @@ import {
   Flame,
   LayoutDashboard,
   LogOut,
+  Moon,
   Settings,
   Shield,
+  Sun,
   User,
   Users,
 } from 'lucide-react';
+import { useTheme } from 'next-themes';
 
 import {
   DropdownMenu,
@@ -23,6 +26,10 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
+  DropdownMenuSub,
+  DropdownMenuSubTrigger,
+  DropdownMenuPortal,
+  DropdownMenuSubContent
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -41,8 +48,10 @@ const navigation = [
 
 export function AppHeader() {
   const pathname = usePathname();
+  const { setTheme } = useTheme();
+  
   const pageTitle =
-    navigation.find((item) => item.href === pathname)?.name || 'Heat Treatment Guide';
+    navigation.find((item) => pathname.startsWith(item.href))?.name || 'Heat Treatment Guide';
 
   const userAvatar = PlaceHolderImages.find((img) => img.id === 'user-avatar');
 
@@ -87,6 +96,26 @@ export function AppHeader() {
                 <Settings className="mr-2" />
                 <span>Settings</span>
               </DropdownMenuItem>
+               <DropdownMenuSub>
+                <DropdownMenuSubTrigger>
+                  <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 mr-2" />
+                  <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 mr-2" />
+                  <span>Toggle theme</span>
+                </DropdownMenuSubTrigger>
+                <DropdownMenuPortal>
+                  <DropdownMenuSubContent>
+                    <DropdownMenuItem onClick={() => setTheme("light")}>
+                      Light
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => setTheme("dark")}>
+                      Dark
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => setTheme("system")}>
+                      System
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuPortal>
+              </DropdownMenuSub>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
             <DropdownMenuItem asChild>
