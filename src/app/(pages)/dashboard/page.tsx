@@ -62,7 +62,7 @@ export default function DashboardPage() {
       <Card className="border-0 shadow-none -m-6 -mt-10 bg-gradient-to-br from-primary/10 to-transparent rounded-none">
         <CardHeader className="p-6 pt-10">
           <CardTitle className="text-3xl font-headline">
-            The Future of Metallurgy is Here
+            Welcome to the Heat Treating Hub
           </CardTitle>
           <CardDescription className="text-lg">
             Your AI-powered assistant for metallurgy and heat treatment.
@@ -96,7 +96,7 @@ export default function DashboardPage() {
               <p className="text-muted-foreground">{feature.description}</p>
             </CardContent>
             <CardContent>
-              <Button asChild variant="outline" className="w-full">
+              <Button asChild className="w-full">
                 <Link href={feature.href}>
                   Go to {feature.title.split(' ')[0]} <ArrowRight className="ml-2" />
                 </Link>
