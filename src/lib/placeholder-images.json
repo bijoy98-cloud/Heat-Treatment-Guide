@@ -1,3 +1,82 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "guide-annealing",
+      "description": "Illustration for annealing process showing heated metal in a furnace",
+      "imageUrl": "https://images.unsplash.com/photo-1572019637935-a6bc9723b3b6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtZXRhbCUyMGZ1cm5hY2V8ZW58MHx8fHwxNzY0Njg4MTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal furnace"
+    },
+    {
+      "id": "guide-quenching",
+      "description": "Illustration for quenching process showing hot metal being submerged in liquid",
+      "imageUrl": "https://images.unsplash.com/photo-1531843688838-e3b86ddecde1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxob3QlMjBtZXRhbHxlbnwwfHx8fDE3NjQ2ODgxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "hot metal"
+    },
+    {
+      "id": "guide-tempering",
+      "description": "Illustration for tempering process showing metal parts in an industrial oven",
+      "imageUrl": "https://images.unsplash.com/photo-1730705728110-99c67973f759?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxpbmR1c3RyaWFsJTIwb3ZlbnxlbnwwfHx8fDE3NjQ2ODgxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "industrial oven"
+    },
+    {
+      "id": "guide-normalizing",
+      "description": "Illustration for normalizing process showing metal cooling in air",
+      "imageUrl": "https://images.unsplash.com/photo-1758813533356-5f04142cd452?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb29saW5nJTIwbWV0YWx8ZW58MHx8fHwxNzY0Njg4MTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cooling metal"
+    },
+    {
+      "id": "tutorial-1",
+      "description": "Video tutorial thumbnail for basic metallurgy",
+      "imageUrl": "https://images.unsplash.com/photo-1705875021755-88ba2c835524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtZXRhbGx1cmd5JTIwdGV4dGJvb2t8ZW58MHx8fHwxNzY0Njg4MTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metallurgy textbook"
+    },
+    {
+      "id": "tutorial-2",
+      "description": "Video tutorial thumbnail for advanced quenching techniques",
+      "imageUrl": "https://images.unsplash.com/photo-1554475901-4538ddfbccc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2llbmNlJTIwZXhwZXJpbWVudHxlbnwwfHx8fDE3NjQ2ODcwMTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science experiment"
+    },
+    {
+      "id": "tutorial-3",
+      "description": "Video tutorial thumbnail for safety in heat treatment",
+      "imageUrl": "https://images.unsplash.com/photo-1755925193287-275aa7fe64f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzYWZldHklMjBnZWFyfGVufDB8fHx8MTc2NDY0MDYzNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "safety gear"
+    },
+    {
+      "id": "tutorial-4",
+      "description": "Video tutorial thumbnail for forge welding",
+      "imageUrl": "https://images.unsplash.com/photo-1543347080-1a67824f1be2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxibGFja3NtaXRoJTIwZm9yZ2V8ZW58MHx8fHwxNzY0Njg4MTk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blacksmith forge"
+    },
+    {
+      "id": "login-hero",
+      "description": "A dramatic shot of molten metal being poured",
+      "imageUrl": "https://images.unsplash.com/photo-1571590946238-a0ba990d12a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2x0ZW4lMjBtZXRhbHxlbnwwfHx8fDE3NjQ2ODgxOTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "molten metal"
+    },
+    {
+      "id": "user-avatar",
+      "description": "Default user avatar",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ2NzYxNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "community-author-1",
+      "description": "Avatar for a community forum user",
+      "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ2NzYxNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "community-author-2",
+      "description": "Avatar for another community forum user",
+      "imageUrl": "https://images.unsplash.com/photo-1531123414780-f74242c2b052?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzY0Njc2MTU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "community-author-3",
+      "description": "Avatar for a third community forum user",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjQ2NzYxNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    }
+  ]
 }
