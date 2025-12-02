@@ -50,16 +50,17 @@ export function AppSidebar() {
         <SidebarMenu>
           {navigation.map((item) => (
             <SidebarMenuItem key={item.name}>
-              <Link href={item.href} legacyBehavior passHref>
-                <SidebarMenuButton
-                  isActive={pathname.startsWith(item.href)}
-                  tooltip={item.name}
-                  className="text-sidebar-foreground/80 hover:text-sidebar-accent-foreground data-[active=true]:text-sidebar-accent-foreground"
-                >
+              <SidebarMenuButton
+                asChild
+                isActive={pathname.startsWith(item.href)}
+                tooltip={item.name}
+                className="text-sidebar-foreground/80 hover:text-sidebar-accent-foreground data-[active=true]:text-sidebar-accent-foreground"
+              >
+                <Link href={item.href}>
                   <item.icon />
                   <span>{item.name}</span>
-                </SidebarMenuButton>
-              </Link>
+                </Link>
+              </SidebarMenuButton>
             </SidebarMenuItem>
           ))}
         </SidebarMenu>
