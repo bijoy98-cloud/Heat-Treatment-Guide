@@ -69,7 +69,6 @@ export default function SignupPage() {
         )}
         <div className="absolute inset-0 bg-primary/60" />
         <div className="absolute top-8 left-8 text-primary-foreground flex items-center gap-2">
-            <Flame className="h-8 w-8" />
             <span className="text-2xl font-bold font-headline">Heat Treatment Guide</span>
         </div>
         <div className="absolute bottom-8 left-8 right-8 text-primary-foreground">
